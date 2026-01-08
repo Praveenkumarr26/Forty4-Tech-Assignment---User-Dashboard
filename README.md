@@ -85,9 +85,8 @@ Company
 
 Address w/ geolocation
 
-📁 Project Structure
 src/
-├── assets/                     
+├── assets/
 ├── components/
 │   ├── CreateUserModal.jsx      # Modal form for new user creation
 │   ├── Navbar.jsx               # Top navigation bar
@@ -99,11 +98,11 @@ src/
 ├── pages/
 │   ├── Dashboard.jsx            # Main dashboard page
 │   └── UserDetails.jsx          # Detailed view of a single user
-├── App.css                      
-├── App.jsx                      
-├── index.css                    
-└── main.jsx                     
-
+├── App.css
+├── App.jsx
+├── index.css
+└── main.jsx
+                  
 public/
 vite.config.js
 index.html
