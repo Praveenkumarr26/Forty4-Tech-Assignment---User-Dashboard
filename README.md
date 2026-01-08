@@ -1,120 +1,144 @@
-User Dashboard – React Frontend Intern Assignment
+User Dashboard — React Frontend Intern Assignment
 
-This project is a responsive User Dashboard application built using React.js as part of the React Frontend Intern assessment.
-It showcases API consumption, routing, global state management, search filtering, and form handling.
+A responsive User Dashboard built with React.js for the React Frontend Intern assignment. The application fetches user data from an external API, displays users in card layouts, supports searching, and provides a user details view. The project includes both light and dark theme variants.
 
-🚀 Features
+🌟 Features
+Dashboard
 
-✔ Fetch users from REST API
-✔ Display user info in responsive cards
-✔ Search/filter users by name (client-side)
-✔ Add new users via form (client-side only)
-✔ Global state using React Context API
-✔ User Details page via React Router
-✔ Shows address + geo-location info
-✔ Responsive UI using Bootstrap
-✔ Modular components & clean structure
+✔ Fetch users from API
+✔ Display user information in cards:
+
+Name
+
+Email
+
+Phone
+
+Company Name
+
+✔ Search/filter users by name
+
+Create User
+
+✔ Client-side only
+✔ Modal-based form
+✔ Adds user to global state
+
+User Details Page
+
+✔ Click user → open details
+✔ Displays:
+
+Contact Information
+
+Company Information
+
+Address
+
+Geo-coordinates (lat/lng)
+
+Global State Management
+
+✔ React Context API for:
+
+User list
+
+User addition
+
+Routing
+
+✔ React Router DOM for:
+
+/ — Dashboard
+
+/user/:id — Details
+
+Responsive Design
+
+✔ Optimized for PC/Desktop usage as required for the assignment
 
 🧰 Tech Stack
-Category	Tools
-Framework	React.js (Functional Components + Hooks)
-State Management	Context API
-Routing	React Router DOM
-HTTP Requests	Axios / Fetch
-Styling	Bootstrap / Basic CSS
-Data Source	JSONPlaceholder API
-📡 API Used
+
+React 18
+
+React Router DOM 6
+
+React Context API
+
+Fetch API
+
+Vite
+
+CSS3 (Flexbox + Grid)
+
+🌐 API Integration
+
+Data source:
 
 https://jsonplaceholder.typicode.com/users
 
+Provides:
+
+Basic user info
+
+Company
+
+Address w/ geolocation
+
 📁 Project Structure
 src/
-│── components/
-│   ├── UserCard.jsx
-│   ├── UserForm.jsx
-│── context/
-│   └── UserContext.jsx
-│── pages/
-│   ├── Dashboard.jsx
-│   ├── UserDetails.jsx
-│── App.jsx
-│── index.js
+├── assets/                     
+├── components/
+│   ├── CreateUserModal.jsx      # Modal form for new user creation
+│   ├── Navbar.jsx               # Top navigation bar
+│   ├── SearchBar.jsx            # Search input
+│   └── UserCard.jsx             # Individual user card
+├── context/
+│   ├── ThemeContext.jsx         # Light/Dark theme state
+│   └── UserContext.jsx          # Global user state
+├── pages/
+│   ├── Dashboard.jsx            # Main dashboard page
+│   └── UserDetails.jsx          # Detailed view of a single user
+├── App.css                      
+├── App.jsx                      
+├── index.css                    
+└── main.jsx                     
 
-🧩 Key Implementation Details
-📍 Global State
+public/
+vite.config.js
+index.html
+package.json
+README.md
 
-User list is stored in Context API so new client-side users persist within session.
+🚀 Installation & Setup
+Prerequisites
 
-🔍 Search
+Node.js (v14+)
 
-Filters users by name in realtime using local state.
+npm or yarn
 
-➕ Create User
-
-Adds a new user without backend — appended to global state with a generated id.
-
-🔗 Routing
-
-/ → Dashboard (user list + search + create form)
-
-/user/:id → User Details
-
-📱 Responsiveness
-
-Uses Bootstrap grid to ensure mobile-friendly layout.
-
-🛠 Setup & Installation
-1. Clone the repository
-git clone <repo-url>
+Install
+git clone https://github.com/yourusername/user-dashboard.git
 cd user-dashboard
-
-2. Install dependencies
 npm install
 
-3. Run development server
-npm start
+Run Development
+npm run dev
 
-4. Build for production
+
+Application runs at:
+
+http://localhost:5173/
+
+Build for Production
 npm run build
 
-🖼 Screenshots (Add after implementation)
+🖥 Output Screenshots (PC View Only)
 
-📌 Include: Dashboard view, User Details, Mobile view
-(Replace the placeholders below)
+The application supports Light and Dark themes.
+Below are the final desktop output screenshots:
 
-/screenshots/dashboard.png
-/screenshots/user-details.png
+🌞 Dashboard — Light Theme
 
-✨ Future Improvements (Bonus ideas)
+🌙 Dashboard — Dark Theme
 
-Pagination for large datasets
-
-Redux Toolkit version
-
-Real backend for create/update/delete
-
-Dark mode
-
-These make your assignment look more thought-through.
-
-✅ Evaluation Criteria Mapping
-Requirement	Status
-Fetch users from API	✔
-Display in cards	✔
-Search/filter	✔
-Create user form (client-side)	✔
-React Router	✔
-Context/Redux	✔ (Context)
-Responsive layout	✔
-Hooks usage	✔
-Documentation	✔
-Screenshots	⏳ (add after deployment)
-📦 Deployment (Optional but Recommended)
-
-Deploy easily on:
-
-Vercel
-
-Netlify
-
-GitHub Pages
