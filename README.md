@@ -85,29 +85,25 @@ Company
 
 Address w/ geolocation
 
+<pre><code>
 src/
 ├── assets/
 ├── components/
-│   ├── CreateUserModal.jsx      # Modal form for new user creation
-│   ├── Navbar.jsx               # Top navigation bar
-│   ├── SearchBar.jsx            # Search input
-│   └── UserCard.jsx             # Individual user card
+│   ├── CreateUserModal.jsx
+│   ├── Navbar.jsx
+│   ├── SearchBar.jsx
+│   └── UserCard.jsx
 ├── context/
-│   ├── ThemeContext.jsx         # Light/Dark theme state
-│   └── UserContext.jsx          # Global user state
+│   ├── ThemeContext.jsx
+│   └── UserContext.jsx
 ├── pages/
-│   ├── Dashboard.jsx            # Main dashboard page
-│   └── UserDetails.jsx          # Detailed view of a single user
+│   ├── Dashboard.jsx
+│   └── UserDetails.jsx
 ├── App.css
 ├── App.jsx
 ├── index.css
 └── main.jsx
-                  
-public/
-vite.config.js
-index.html
-package.json
-README.md
+</code></pre>
 
 🚀 Installation & Setup
 Prerequisites
@@ -138,6 +134,8 @@ The application supports Light and Dark themes.
 Below are the final desktop output screenshots:
 
 🌞 Dashboard — Light Theme
+<img width="1795" height="862" alt="Screenshot (154)" src="https://github.com/user-attachments/assets/4ad26cb5-a0af-451f-b846-b58e2d89c572" />
 
 🌙 Dashboard — Dark Theme
+<img width="1920" height="829" alt="Screenshot (155)" src="https://github.com/user-attachments/assets/5e876a25-5495-40ec-ae3b-c12555d5139b" />
 
